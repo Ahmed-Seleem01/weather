@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(0,0,20);
+  color: #f2f2f2;
+  margin: 0;
+  padding: 2rem;;
+}
+#title{
+  text-align: center;
+  font-family: Impact ;
+  color: rgba(220, 10, 0, 0.8);
+  letter-spacing: 1.5px; 
+}
+fieldset{
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+label{
+  display: block;
+  padding: 0.5rem 0;
+}
+input{
+  display: block;
+  height: 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+
+button{
+  display: block;
+  padding: 0.5em;
+  background-color: rgb(50,50,50);
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin: 1rem auto 0 auto; 
+  cursor: pointer;
+}
+button:hover{
+  background-color: #f2a212;
+}
+
+
+#result{
+  margin: 4rem auto ;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  visibility: hidden;
+}
+
+article{
+  height: auto;
+  min-height: 13vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border: 2px solid white;
+}
+
+#descriptions{
+  justify-content: center;
+  flex-wrap: no-wrap;
+}
+
+@media (max-width: 450px){
+  article{
+  font-size: 1.5em;
+  }
+}
+
+@media (min-width: 450px){
+  article{
+  font-size: 2em;
+  }
+}
+#city{
+  flex-grow: 0;
+  font-size: 90%;
+  white-space: nowrap;
+}
