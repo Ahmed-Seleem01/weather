@@ -58,6 +58,11 @@ button:hover{
   visibility: hidden;
 }
 
+#longitude, #latitude{
+  display: inline-block;
+  width: 40%;
+  
+}
 article{
   height: auto;
   min-height: 13vh;
@@ -67,7 +72,7 @@ article{
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 #descriptions{
