@@ -21,7 +21,7 @@ $(document).ready(()=>{
   }
   
   if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(getPosition);
+      navigator.geolocation.watchPosition(getPosition);
     } else {
        $('#result').text("Geolocation is not supported by this browser.");
       $('#result').css('visibility', visible);
