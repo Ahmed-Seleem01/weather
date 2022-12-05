@@ -58,13 +58,15 @@ button:hover{
   visibility: hidden;
 }
 
-#longitude, #latitude{
-  display: inline-block;
-  width: 40%;
-  
+#coords{
+  margin: 1em auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+
 article{
-  height: auto;
+  text-align: left;
   min-height: 13vh;
   margin: 0 auto;
   display: flex;
@@ -74,7 +76,13 @@ article{
   padding: 0 2rem;
   border: 1px solid white;
 }
-
+article>span, article>strong{
+  flex: 0 0 130px;
+  //border: 1px solid white;
+}
+article>span{
+  text-align: center;
+}
 #descriptions{
   justify-content: center;
   flex-wrap: no-wrap;
@@ -90,9 +98,4 @@ article{
   article{
   font-size: 2em;
   }
-}
-#city{
-  flex-grow: 0;
-  font-size: 90%;
-  white-space: nowrap;
 }
